@@ -1,0 +1,53 @@
+.footer {
+  &__container {
+    &__limitations {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      width: 80%;
+      margin: auto;
+      gap: 150px;
+      color: $darkElectricBlue;
+      align-items: center;
+      &__text {
+        h4 {
+          color: $darkBlue;
+          font-size: 48px;
+          letter-spacing: -2px;
+          font-weight: 550;
+          margin-bottom: 40px;
+        }
+        p {
+          line-height: 23px;
+        }
+      }
+      &__box {
+        margin-top: 150px;
+        width: 365px;
+        height: 232px;
+        background-color: $white;
+        box-shadow: 1px 20px 30px $blueLight;
+        border-radius: 20px;
+        p {
+          width: 80%;
+          margin: auto;
+          line-height: 23px;
+        }
+        &__img {
+          &__title {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            margin-left: 30px;
+            width: 35%;
+            h3 {
+              color: $darkBlue;
+              letter-spacing: -0.6px;
+              font-size: 24px;
+              font-weight: 550;
+            }
+          }
+        }
+      }
+    }
+  }
+}
