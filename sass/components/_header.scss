@@ -1,0 +1,151 @@
+.header {
+  &__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    &__description {
+      background-image: linear-gradient(to top left, $blueLight, $greenLight);
+      width: 978px;
+      height: 737px;
+      border-radius: 30px 0px 30px 30px;
+      margin-left: 20px;
+      &__logo {
+        img {
+          margin-top: 30px;
+          margin-left: 100px;
+        }
+      }
+      &__text {
+        margin-top: 150px;
+        margin-left: 100px;
+        color: $darkElectricBlue;
+
+        h1 {
+          font-size: 64px;
+          color: $darkBlue;
+          width: 450px;
+          font-weight: 600;
+          line-height: 110%;
+          letter-spacing: -4px;
+        }
+        p {
+          width: 464px;
+          text-align: left;
+          font-weight: 300;
+          line-height: 23px;
+        }
+      }
+    }
+    &__form {
+      margin-left: -400px;
+      margin-top: 150px;
+      width: 564px;
+      height: 484px;
+      background-color: $white;
+      box-shadow: 1px 20px 30px $blueLight;
+      border-radius: 20px;
+      padding-left: 40px;
+
+      &__button {
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+
+        label {
+          font-weight: 600;
+          color: $darkBlue;
+        }
+        input {
+          width: 30px;
+          height: 30px;
+          background-color: red;
+        }
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 24px;
+        color: $darkBlue;
+      }
+
+      &__input {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        label {
+          color: $darkElectricBlue;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        input {
+          font-size: 24px;
+          font-weight: 600;
+          padding: 20px;
+          width: 190px;
+          border-radius: 15px;
+          border: 1px solid;
+          outline-color: $blue;
+          border-color: $borders;
+          color: $darkBlue;
+          &::-webkit-inner-spin-button {
+            display: none;
+          }
+        }
+        &__height {
+          display: grid;
+          grid-template-columns: auto;
+          position: relative;
+          &__unit {
+            font-size: 24px;
+            font-weight: 600;
+            position: absolute;
+            top: 45px;
+            left: 65%;
+            color: $blue;
+          }
+        }
+        &__imperial {
+          display: grid;
+          grid-template-columns: auto;
+          position: relative;
+          &__unit {
+            font-size: 24px;
+            font-weight: 600;
+            position: absolute;
+            top: 45px;
+            left: 65%;
+            color: $blue;
+          }
+        }
+      }
+      &__banner {
+        padding: 20px;
+        background-image: linear-gradient(
+          to right,
+          $blue,
+          $lightBlueBackground
+        );
+        margin-top: 20px;
+        margin-right: 40px;
+        gap: 100px;
+        color: $white;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 50px;
+        align-items: center;
+        border-radius: 10px 100px 100px 10px;
+        &__result {
+          h2 {
+            font-size: 64px;
+            line-height: 4px;
+          }
+        }
+        &__resume {
+          p {
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

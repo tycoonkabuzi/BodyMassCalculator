@@ -1,0 +1,40 @@
+.about {
+  padding-top: 100px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 47% auto;
+    gap: 150px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      display: grid;
+      grid-template-columns: auto;
+      height: auto;
+      margin-top: -100px;
+      img {
+        margin-left: auto;
+      }
+      &__paragraph {
+        h4 {
+          font-size: 48px;
+          letter-spacing: -3px;
+          font-weight: 600;
+          color: $darkBlue;
+          margin-bottom: 40px;
+        }
+        p {
+          color: $darkElectricBlue;
+          letter-spacing: 0px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+}
