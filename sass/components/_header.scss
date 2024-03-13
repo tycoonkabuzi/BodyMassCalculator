@@ -40,11 +40,9 @@
       margin-top: 150px;
       width: 564px;
       height: 484px;
-      background-color: $white;
-      box-shadow: 1px 20px 30px $blueLight;
-      border-radius: 20px;
-      padding-left: 40px;
 
+      padding-left: 40px;
+      @include styleBox;
       &__button {
         margin-bottom: 40px;
         display: grid;

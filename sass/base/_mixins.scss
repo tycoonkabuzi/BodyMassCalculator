@@ -1,0 +1,25 @@
+@mixin styleBox {
+  background-color: $white;
+  box-shadow: 1px 20px 30px $blueLight;
+  border-radius: 20px;
+}
+@mixin titleBox {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-left: 30px;
+  width: 35%;
+}
+@mixin paragraphBox {
+  width: 80%;
+  margin: auto;
+  line-height: 23px;
+  padding-bottom: 20px;
+  color: $darkElectricBlue;
+}
+@mixin title {
+  color: $darkBlue;
+  letter-spacing: -0.6px;
+  font-size: 24px;
+  font-weight: 550;
+}

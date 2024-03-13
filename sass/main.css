@@ -48,10 +48,10 @@ body {
   margin-top: 150px;
   width: 564px;
   height: 484px;
+  padding-left: 40px;
   background-color: #ffffff;
   box-shadow: 1px 20px 30px #d6e6fe;
   border-radius: 20px;
-  padding-left: 40px;
 }
 .header__container__form__button {
   margin-bottom: 40px;
@@ -206,7 +206,7 @@ body {
 
 .footer__container__limitations {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 48% auto auto;
   width: 80%;
   margin: auto;
   gap: 150px;
@@ -222,6 +222,7 @@ body {
 }
 .footer__container__limitations__text p {
   line-height: 23px;
+  width: 100%;
 }
 .footer__container__limitations__box {
   margin-top: 150px;
@@ -235,6 +236,8 @@ body {
   width: 80%;
   margin: auto;
   line-height: 23px;
+  padding-bottom: 20px;
+  color: #5e6e85;
 }
 .footer__container__limitations__box__img__title {
   display: grid;
@@ -248,4 +251,142 @@ body {
   letter-spacing: -0.6px;
   font-size: 24px;
   font-weight: 550;
+}
+.footer__container__age {
+  padding-top: 35px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: -60px;
+  width: 57%;
+  margin-left: 35%;
+}
+.footer__container__age__image img {
+  margin-left: -200px;
+  margin-top: -150px;
+}
+.footer__container__age__age__img {
+  background-color: #ffffff;
+  box-shadow: 1px 20px 30px #d6e6fe;
+  border-radius: 20px;
+  width: 365px;
+  height: 184px;
+}
+.footer__container__age__age__img__title__box {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-left: 30px;
+  width: 35%;
+}
+.footer__container__age__age__img__title__box h3 {
+  color: #253347;
+  letter-spacing: -0.6px;
+  font-size: 24px;
+  font-weight: 550;
+}
+.footer__container__age__age p {
+  width: 80%;
+  margin: auto;
+  line-height: 23px;
+  padding-bottom: 20px;
+  color: #5e6e85;
+}
+.footer__container__age__muscle__img {
+  background-color: #ffffff;
+  box-shadow: 1px 20px 30px #d6e6fe;
+  border-radius: 20px;
+  width: 365px;
+  height: 184px;
+}
+.footer__container__age__muscle__img__title__box {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-left: 30px;
+  width: 35%;
+}
+.footer__container__age__muscle__img__title__box h3 {
+  color: #253347;
+  letter-spacing: -0.6px;
+  font-size: 24px;
+  font-weight: 550;
+}
+.footer__container__age__muscle p {
+  width: 80%;
+  margin: auto;
+  line-height: 23px;
+  padding-bottom: 20px;
+  color: #5e6e85;
+}
+.footer__container__pregnancy {
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 50%;
+  margin: auto;
+  padding-top: 35px;
+  gap: 35px;
+}
+.footer__container__pregnancy__pregnancy {
+  background-color: #ffffff;
+  box-shadow: 1px 20px 30px #d6e6fe;
+  border-radius: 20px;
+}
+.footer__container__pregnancy__pregnancy__img__title__box {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-left: 30px;
+  width: 35%;
+  width: 190px;
+}
+.footer__container__pregnancy__pregnancy__img__title__box h3 {
+  color: #253347;
+  letter-spacing: -0.6px;
+  font-size: 24px;
+  font-weight: 550;
+}
+.footer__container__pregnancy__pregnancy p {
+  width: 80%;
+  margin: auto;
+  line-height: 23px;
+  padding-bottom: 20px;
+  color: #5e6e85;
+}
+.footer__container__pregnancy__race {
+  background-color: #ffffff;
+  box-shadow: 1px 20px 30px #d6e6fe;
+  border-radius: 20px;
+}
+.footer__container__pregnancy__race__img__title__box {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-left: 30px;
+  width: 35%;
+  width: 140px;
+}
+.footer__container__pregnancy__race__img__title__box h3 {
+  color: #253347;
+  letter-spacing: -0.6px;
+  font-size: 24px;
+  font-weight: 550;
+}
+.footer__container__pregnancy__race p {
+  width: 80%;
+  margin: auto;
+  line-height: 23px;
+  padding-bottom: 20px;
+  color: #5e6e85;
+}
+
+.copyright {
+  width: 80%;
+  margin: auto;
+  line-height: 23px;
+  padding-bottom: 20px;
+  color: #5e6e85;
+  text-align: center;
+  padding-bottom: 100px;
 }/*# sourceMappingURL=main.css.map */
