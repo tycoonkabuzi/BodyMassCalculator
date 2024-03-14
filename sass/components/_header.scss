@@ -8,6 +8,7 @@
       height: 737px;
       border-radius: 30px 0px 30px 30px;
       margin-left: 20px;
+
       &__logo {
         img {
           margin-top: 30px;
@@ -39,8 +40,7 @@
       margin-left: -400px;
       margin-top: 150px;
       width: 564px;
-      height: 484px;
-
+      padding-bottom: -1000px;
       padding-left: 40px;
       @include styleBox;
       &__button {
@@ -52,11 +52,11 @@
         label {
           font-weight: 600;
           color: $darkBlue;
+          margin-top: -10px;
         }
         input {
           width: 30px;
           height: 30px;
-          background-color: red;
         }
       }
       h3 {
@@ -70,27 +70,15 @@
         grid-template-columns: auto auto;
 
         label {
-          color: $darkElectricBlue;
-          font-size: 14px;
-          margin-bottom: 10px;
+          @include labelStyle;
         }
         input {
-          font-size: 24px;
-          font-weight: 600;
-          padding: 20px;
-          width: 190px;
-          border-radius: 15px;
-          border: 1px solid;
-          outline-color: $blue;
-          border-color: $borders;
-          color: $darkBlue;
-          &::-webkit-inner-spin-button {
-            display: none;
-          }
+          @include inputStyle;
         }
         &__height {
           display: grid;
           grid-template-columns: auto;
+          align-items: center;
           position: relative;
           &__unit {
             font-size: 24px;
@@ -101,6 +89,85 @@
             color: $blue;
           }
         }
+
+        &__imperial {
+          display: grid;
+          grid-template-columns: auto;
+          position: relative;
+
+          &__unit {
+            font-size: 24px;
+            font-weight: 600;
+            position: absolute;
+            top: 45px;
+            left: 65%;
+            color: $blue;
+          }
+        }
+      }
+
+      &__inputImperial {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+
+        label {
+          @include labelStyle;
+        }
+        input {
+          @include inputStyle;
+        }
+        &__height {
+          display: grid;
+          grid-template-columns: auto auto;
+          align-items: center;
+
+          &__container {
+            display: grid;
+            grid-template-columns: auto auto;
+            position: relative;
+            align-items: center;
+            &__first {
+              &__unit {
+                @include unit;
+                left: 190px;
+                top: 25px;
+              }
+            }
+            &__second {
+              &__unit {
+                @include unit;
+                right: 70px;
+                top: 25px;
+              }
+            }
+          }
+        }
+        &__weight {
+          display: grid;
+
+          grid-template-columns: auto;
+          align-items: center;
+
+          &__container {
+            display: grid;
+            grid-template-columns: auto auto;
+            position: relative;
+            &__first {
+              &__unit {
+                @include unit;
+                left: 190px;
+              }
+            }
+            &__second {
+              &__unit {
+                @include unit;
+                right: 70px;
+              }
+            }
+          }
+        }
+
         &__imperial {
           display: grid;
           grid-template-columns: auto;
@@ -117,14 +184,10 @@
       }
       &__banner {
         padding: 20px;
-        background-image: linear-gradient(
-          to right,
-          $blue,
-          $lightBlueBackground
-        );
+
         margin-top: 20px;
         margin-right: 40px;
-        gap: 100px;
+        gap: 50px;
         color: $white;
         display: grid;
         grid-template-columns: auto auto;
@@ -140,10 +203,34 @@
         &__resume {
           p {
             font-size: 14px;
+            width: 80%;
             font-weight: 300;
           }
         }
       }
+    }
+  }
+  .inactive {
+    display: none;
+  }
+  .metric {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    width: 120px;
+    label {
+      color: $darkBlue;
+      margin-top: 2px;
+    }
+  }
+  .imperial {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    width: 120px;
+    label {
+      color: $darkBlue;
+      margin-top: 2px;
     }
   }
 }

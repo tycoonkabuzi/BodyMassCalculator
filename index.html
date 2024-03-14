@@ -27,43 +27,94 @@
           <h3>Enter your details below</h3>
           <form action="">
             <div class="header__container__form__button">
-              <label for=""
-                ><input type="radio" name="details" id="Metric" />Metrix
-              </label>
-
-              <label for="">
-                <input
-                  type="radio"
-                  name="details"
-                  id="Imperial"
-                />Imperial</label
-              >
+              <div class="metric">
+                <input type="radio" name="details" id="metric" />
+                <label for="">Metric </label>
+              </div>
+              <div class="imperial">
+                <input type="radio" name="details" id="imperial" />
+                <label for=""> Imperial</label>
+              </div>
             </div>
             <div class="header__container__form__input">
               <div class="header__container__form__input__height">
                 <label for=""> Height </label>
-                <input type="number" />
+                <input type="number" id="height" />
                 <span class="header__container__form__input__height__unit"
                   >cm</span
                 >
               </div>
               <div class="header__container__form__input__imperial">
                 <label for=""> Weight </label>
-                <input type="number" />
+                <input id="weight" type="number" />
                 <span class="header__container__form__input__imperial__unit"
                   >kg</span
                 >
               </div>
             </div>
+
+            <div class="header__container__form__inputImperial inactive">
+              <div class="header__container__form__nputImperial__height">
+                <label for=""> Height </label>
+                <div
+                  class="header__container__form__inputImperial__height__container"
+                >
+                  <div
+                    class="header__container__form__inputImperial__height__container__first"
+                  >
+                    <input type="number" id="feet" />
+                    <span
+                      class="header__container__form__inputImperial__height__container__first__unit"
+                      >ft</span
+                    >
+                  </div>
+                  <div
+                    class="header__container__form__inputImperial__height__container__second"
+                  >
+                    <input type="number" id="inches" />
+                    <span
+                      class="header__container__form__inputImperial__height__container__second__unit"
+                      >in</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="header__container__form__inputImperial__weight">
+                <label for=""> Weight </label>
+                <div
+                  class="header__container__form__inputImperial__weight__container"
+                >
+                  <div
+                    class="header__container__form__inputImperial__weight__container__first"
+                  >
+                    <input type="number" id="stones" />
+                    <span
+                      class="header__container__form__inputImperial__weight__container__first__unit"
+                      >st</span
+                    >
+                  </div>
+                  <div
+                    class="header__container__form__inputImperial__weight__container__second"
+                  >
+                    <input type="number" id="pounds" />
+                    <span
+                      class="header__container__form__inputImperial__weight__container__second__unit"
+                      >lbs</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="header__container__form__banner">
               <div class="header__container__form__banner__result">
                 <p>Your BMI is..</p>
-                <h2>23.4</h2>
+                <h2>Here</h2>
               </div>
               <div class="header__container__form__banner__resume">
                 <p>
-                  Your BMI suggests you're healthy weight. Your ideal weight is
-                  between 63.5kg - 85.6kg .
+                  You will get a small description on your health, put your
+                  weight and height
                 </p>
               </div>
             </div>
@@ -220,5 +271,6 @@
     <div class="copyright">
       <p>Copyright Kabuzi Ntwali 2024</p>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

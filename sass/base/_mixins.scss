@@ -23,3 +23,29 @@
   font-size: 24px;
   font-weight: 550;
 }
+@mixin inputStyle {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px;
+  width: 190px;
+  border-radius: 15px;
+  border: 1px solid;
+  outline-color: $blue;
+  border-color: $borders;
+  color: $darkBlue;
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+}
+@mixin labelStyle {
+  color: $darkElectricBlue;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+@mixin unit {
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  color: $blue;
+  top: 20px;
+}
